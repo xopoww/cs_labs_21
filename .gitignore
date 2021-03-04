@@ -4,4 +4,4 @@
 */Release/
 
 # python venv
-./venv/
+.venv/
