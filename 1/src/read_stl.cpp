@@ -6,7 +6,7 @@
 
 #include "cs_common.hpp"
 
-#define MODEL_NAME "pt_rail2"
+#define MODEL_NAME "pt_rail"
 
 #ifdef _WIN32
     #define STL_FILE "..\\" MODEL_NAME ".stl"
