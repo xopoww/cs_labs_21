@@ -1,0 +1,7 @@
+# build directories
+*/build/
+*/Debug/
+*/Release/
+
+# python venv
+./venv/
