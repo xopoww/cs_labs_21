@@ -1,5 +1,6 @@
 # CS labs by Arseny Khoroshilov
 
+Tasks are available at https://github.com/avasyukov/miniscience-4th-term
 
 ## Copyright mentions:
 
