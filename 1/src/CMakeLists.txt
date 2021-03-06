@@ -11,7 +11,7 @@ if( NOT DEFINED CMAKE_BUILD_TYPE )
 
 endif()
 
-message( STATUS "Build type is \"${CMAKE_BUILD_TYPE}\"")
+message( STATUS "Build type for ${PROECT_NAME} is \"${CMAKE_BUILD_TYPE}\"")
 
 
 find_library( gmsh REQUIRED )
@@ -25,7 +25,10 @@ foreach( TASK_NAME ${${PROJECT_NAME}_TASKS} )
     target_sources( ${TASK_NAME} PRIVATE
         "${PROJECT_SOURCE_DIR}/${TASK_NAME}.cpp" )
     
-    target_include_directories( ${TASK_NAME} PUBLIC "/usr/include" )
+    target_include_directories( ${TASK_NAME} PRIVATE
+        "/usr/include"
+        "${PROJECT_SOURCE_DIR}/../include"
+        )
 
     target_link_libraries( ${TASK_NAME} gmsh )
 
