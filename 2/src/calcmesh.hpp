@@ -22,18 +22,6 @@
 #define center_z(z) (z - 75.83204078674316)
 #define center(coord) center_##coord(coord)
 
-// void compute_velocity(double x, double y, double z, double &vx, double &vy, double &vz)
-// {
-//     // could not think of something "logical" for my model, so I decided to make it fun
-//     // the points have velocities in YZ plane directed away from (0,0) and proportional to x
-//     static const double coef = 0.05;
-//     double abs_vel = std::abs(coef * center(x));
-//     double c = std::pow(center(z)*center(z) + center(y)*center(y), 0.5);
-//     vz = center(z) / c * abs_vel;
-//     vy = center(y) / c * abs_vel;
-//     vx = 0;
-
-// }
 
 double compute_phase(double x, double y, double z, double t)
 {
@@ -128,9 +116,6 @@ public:
             double pointZ = nodesCoords[i*3 + 2];
             
             double smth = 0.0; // the value will change dynamically
-
-            // double vx, vy, vz;
-            // compute_velocity(pointX, pointY, pointZ, vx, vy, vz);
 
             nodes[i] = CalcNode(pointX, pointY, pointZ, smth, 0.0, 0.0, 0.0);
         }
