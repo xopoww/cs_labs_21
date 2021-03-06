@@ -6,12 +6,12 @@ set( CMAKE_INCLUDE_CURRENT_DIR ON )
 
 
 if( NOT DEFINED CMAKE_BUILD_TYPE )
-
+	message( STATUS hello )
     set( CMAKE_BUILD_TYPE "Release" )
 
 endif()
 
-message( STATUS "Build type for ${PROECT_NAME} is \"${CMAKE_BUILD_TYPE}\"")
+message( STATUS "Build type for ${PROJECT_NAME} is \"${CMAKE_BUILD_TYPE}\"")
 
 
 find_library( gmsh REQUIRED )
