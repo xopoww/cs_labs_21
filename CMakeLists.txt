@@ -7,3 +7,4 @@ add_subdirectory( "${PROJECT_SOURCE_DIR}/1/src" )
 
 add_subdirectory( "${PROJECT_SOURCE_DIR}/2/src" )
 
+add_subdirectory( "${PROJECT_SOURCE_DIR}/3/src" )
